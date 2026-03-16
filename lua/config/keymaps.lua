@@ -1,0 +1,1 @@
+vim.keymap.set('n', '<leader>rt', ':below 15split | term ' .. (vim.fn.filereadable(vim.fn.expand('%:p:h')..'/.venv/bin/python') and './.venv/bin/python' or 'python3') .. ' -u %<CR>', { desc = 'Run Python' })
