@@ -1,1 +1,3 @@
-vim.keymap.set('n', '<leader>rt', ':below 15split | term ' .. (vim.fn.filereadable(vim.fn.expand('%:p:h')..'/.venv/bin/python') and './.venv/bin/python' or 'python3') .. ' -u %<CR>', { desc = 'Run Python' })
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
